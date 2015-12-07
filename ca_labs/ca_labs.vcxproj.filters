@@ -15,34 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ca.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="conf.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="rule.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kiss.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="ca.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="conf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="kiss.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
