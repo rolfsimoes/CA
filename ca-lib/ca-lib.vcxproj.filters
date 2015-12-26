@@ -21,10 +21,13 @@
     <ClCompile Include="conf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kiss.cpp">
+    <ClCompile Include="rule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rule.cpp">
+    <ClCompile Include="jkiss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gkl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +38,13 @@
     <ClInclude Include="conf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="kiss.h">
+    <ClInclude Include="rule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rule.h">
+    <ClInclude Include="jkiss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gkl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

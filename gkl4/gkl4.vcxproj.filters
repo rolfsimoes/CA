@@ -15,20 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ca.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="conf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kiss.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
