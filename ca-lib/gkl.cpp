@@ -1,6 +1,6 @@
 #include "gkl.h"
 
-CA * create_ca_gkl(const uint_t size_state0,
+CA * create_ca_gkl4(const uint_t size_state0,
 	const uint_t size_state1,
 	const uint_t size_state2,
 	const uint_t size_state3,

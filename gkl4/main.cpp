@@ -8,7 +8,7 @@ __inline int __arg_to_uint(const arg_value_t * arg_value) {
 };
 
 check_return gkl_timespace_experiment() {
-	CA * ca = create_ca_gkl(__arg_to_uint(&timespace_args[timespace_arg_size_state0].value),
+	CA * ca = create_ca_gkl4(__arg_to_uint(&timespace_args[timespace_arg_size_state0].value),
 		__arg_to_uint(&timespace_args[timespace_arg_size_state1].value),
 		__arg_to_uint(&timespace_args[timespace_arg_size_state2].value),
 		__arg_to_uint(&timespace_args[timespace_arg_size_state3].value),
@@ -30,7 +30,7 @@ check_return gkl_timespace_experiment() {
 	return true;
 }
 check_return gkl_measure_experiment() {
-	CA * ca = create_ca_gkl(__arg_to_uint(&measure_args[measure_arg_size_state0].value),
+	CA * ca = create_ca_gkl4(__arg_to_uint(&measure_args[measure_arg_size_state0].value),
 		__arg_to_uint(&measure_args[measure_arg_size_state1].value),
 		__arg_to_uint(&measure_args[measure_arg_size_state2].value),
 		__arg_to_uint(&measure_args[measure_arg_size_state3].value));
@@ -49,7 +49,7 @@ check_return gkl_measure_experiment() {
 	return true;
 }
 check_return gkl_density_experiment() {
-	CA * ca = create_ca_gkl(__arg_to_uint(&density_args[density_arg_size_state0].value),
+	CA * ca = create_ca_gkl4(__arg_to_uint(&density_args[density_arg_size_state0].value),
 		__arg_to_uint(&density_args[density_arg_size_state1].value),
 		__arg_to_uint(&density_args[density_arg_size_state2].value),
 		__arg_to_uint(&density_args[density_arg_size_state3].value));
@@ -69,7 +69,7 @@ check_return gkl_density_experiment() {
 	return true;
 }
 check_return gkl_recoveryrate_experiment() {
-	CA * ca = create_ca_gkl(__arg_to_uint(&density_args[recoveryrate_arg_size_state0].value),
+	CA * ca = create_ca_gkl4(__arg_to_uint(&density_args[recoveryrate_arg_size_state0].value),
 		__arg_to_uint(&density_args[recoveryrate_arg_size_state1].value),
 		__arg_to_uint(&density_args[recoveryrate_arg_size_state2].value),
 		__arg_to_uint(&density_args[recoveryrate_arg_size_state3].value));

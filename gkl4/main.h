@@ -78,25 +78,25 @@ const int density_args_size = 9;
 const int recoveryrate_args_size = 11;
 
 arg_struct timespace_args[timespace_args_size] = {
-	{ "state 0 lenght",		arg_value_t("80"),		false,	false },
-	{ "state 1 lenght",		arg_value_t("0"),		false,	false },
-	{ "state 2 lenght",		arg_value_t("0"),		false,	false },
-	{ "state 3 lenght",		arg_value_t("0"),		false,	false },
-	{ "noise total parts",	arg_value_t("1000"),	false,	false },
-	{ "noise parts",		arg_value_t("10"),		false,	false },
-	{ "max steps",			arg_value_t("2400"),	false,	false },
-	{ "stead state",		arg_value_t("2"),		false,	false },
-	{ "shuffle ic",			arg_value_t("0"),		false,	false }
+	{ "state 0 lenght",				arg_value_t("80"),		false,	false },
+	{ "state 1 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 2 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 3 lenght",				arg_value_t("0"),		false,	false },
+	{ "noise total parts",			arg_value_t("1000"),	false,	false },
+	{ "noise parts",				arg_value_t("10"),		false,	false },
+	{ "max steps",					arg_value_t("2400"),	false,	false },
+	{ "stead state",				arg_value_t("2"),		false,	false },
+	{ "shuffle ic",					arg_value_t("0"),		false,	false }
 };
 arg_struct measure_args[measure_args_size] = {
-	{ "state 0 lenght",			arg_value_t("400"),		false,	false },
-	{ "state 1 lenght",			arg_value_t("0"),		false,	false },
-	{ "state 2 lenght",			arg_value_t("0"),		false,	false },
-	{ "state 3 lenght",			arg_value_t("0"),		false,	false },
-	{ "noise total parts",		arg_value_t("1000"),	false,	false },
-	{ "noise parts",			arg_value_t("10"),		false,	false },
-	{ "max steps",				arg_value_t("2400"),	false,	false },
-	{ "number of experiments",	arg_value_t("200"),		false,	false }
+	{ "state 0 lenght",				arg_value_t("400"),		false,	false },
+	{ "state 1 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 2 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 3 lenght",				arg_value_t("0"),		false,	false },
+	{ "noise total parts",			arg_value_t("1000"),	false,	false },
+	{ "noise parts",				arg_value_t("10"),		false,	false },
+	{ "max steps",					arg_value_t("2400"),	false,	false },
+	{ "number of experiments",		arg_value_t("200"),		false,	false }
 };
 arg_struct density_args[density_args_size] = {
 	{ "state 0 lenght",				arg_value_t("400"),		false,	false },
@@ -110,17 +110,17 @@ arg_struct density_args[density_args_size] = {
 	{ "number of experiments",		arg_value_t("100"),		false,	false }
 };
 arg_struct recoveryrate_args[recoveryrate_args_size] = {
-	{ "state 0 lenght",			arg_value_t("400"),		false,	false },
-	{ "state 1 lenght",			arg_value_t("0"),		false,	false },
-	{ "state 2 lenght",			arg_value_t("0"),		false,	false },
-	{ "state 3 lenght",			arg_value_t("0"),		false,	false },
-	{ "noise total parts",		arg_value_t("1000"),	false,	false },
-	{ "noise parts",			arg_value_t("10"),		false,	false },
-	{ "max steps",				arg_value_t("2400"),	false,	false },
-	{ "damage size",			arg_value_t("150"),		false,	false },
-	{ "damaging states",		arg_value_t("123"),		false,	false },
-	{ "majority state",			arg_value_t("0"),		false,	false },
-	{ "number of experiments",	arg_value_t("100"),		false,	false }
+	{ "state 0 lenght",				arg_value_t("400"),		false,	false },
+	{ "state 1 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 2 lenght",				arg_value_t("0"),		false,	false },
+	{ "state 3 lenght",				arg_value_t("0"),		false,	false },
+	{ "noise total parts",			arg_value_t("1000"),	false,	false },
+	{ "noise parts",				arg_value_t("10"),		false,	false },
+	{ "max steps",					arg_value_t("2400"),	false,	false },
+	{ "damage size",				arg_value_t("150"),		false,	false },
+	{ "damaging states",			arg_value_t("123"),		false,	false },
+	{ "majority state",				arg_value_t("0"),		false,	false },
+	{ "number of experiments",		arg_value_t("100"),		false,	false }
 };
 
 typedef check_return(*param_func)();
@@ -159,78 +159,78 @@ const int density_params_size = 13;
 const int recoveryrate_params_size = 15;
 
 param_struct timespace_params[timespace_params_size]{
-	{ "/size_st0",		timespace_arg_size_state0, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/st0",			timespace_arg_size_state0, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st1",		timespace_arg_size_state1, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/st1",			timespace_arg_size_state1, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st2",		timespace_arg_size_state2, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/st2",			timespace_arg_size_state2, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st3",		timespace_arg_size_state3, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/st3",			timespace_arg_size_state3, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/parts",			timespace_arg_total_parts, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/noise_parts",	timespace_arg_noise_parts, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/max_time",		timespace_arg_max_time,	   arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/stead",			timespace_arg_stead_state, arg_value_t(""),  timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/shuffle_ic",	timespace_arg_shuffle_ic,  arg_value_t("1"), timespace_args, timespace_args_size, nullptr, 0, nullptr, "" },
-	{ "/shuffle",		timespace_arg_shuffle_ic,  arg_value_t("1"), timespace_args, timespace_args_size, nullptr, 0, nullptr, "" }
+	{ "/size_st0",		timespace_arg_size_state0,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/st0",			timespace_arg_size_state0,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/size_st1",		timespace_arg_size_state1,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/st1",			timespace_arg_size_state1,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/size_st2",		timespace_arg_size_state2,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/st2",			timespace_arg_size_state2,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/size_st3",		timespace_arg_size_state3,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/st3",			timespace_arg_size_state3,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/parts",			timespace_arg_total_parts,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/noise_parts",	timespace_arg_noise_parts,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/max_time",		timespace_arg_max_time,				arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/stead",			timespace_arg_stead_state,			arg_value_t(""),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/shuffle_ic",	timespace_arg_shuffle_ic,			arg_value_t("1"),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" },
+	{ "/shuffle",		timespace_arg_shuffle_ic,			arg_value_t("1"),	timespace_args,		timespace_args_size,	nullptr,				0,							nullptr,						"" }
 };
 param_struct measure_params[measure_params_size]{
-	{ "/size_st0",		measure_arg_size_state0, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/st0",			measure_arg_size_state0, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st1",		measure_arg_size_state1, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/st1",			measure_arg_size_state1, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st2",		measure_arg_size_state2, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/st2",			measure_arg_size_state2, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st3",		measure_arg_size_state3, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/st3",			measure_arg_size_state3, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/parts",			measure_arg_total_parts, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/noise_parts",	measure_arg_noise_parts, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/max_time",		measure_arg_max_time,	 arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" },
-	{ "/experiments",	measure_arg_experiments, arg_value_t(""), measure_args, measure_args_size, nullptr, 0, nullptr, "" }
+	{ "/size_st0",		measure_arg_size_state0,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st0",			measure_arg_size_state0,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st1",		measure_arg_size_state1,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st1",			measure_arg_size_state1,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st2",		measure_arg_size_state2,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st2",			measure_arg_size_state2,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st3",		measure_arg_size_state3,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st3",			measure_arg_size_state3,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/parts",			measure_arg_total_parts,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/noise_parts",	measure_arg_noise_parts,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/max_time",		measure_arg_max_time,				arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/experiments",	measure_arg_experiments,			arg_value_t(""),	measure_args,		measure_args_size,		nullptr,				0,							nullptr,						"" }
 };
 param_struct density_params[density_params_size]{
-	{ "/size_st0",		density_arg_size_state0, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/st0",			density_arg_size_state0, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st1",		density_arg_size_state1, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/st1",			density_arg_size_state1, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st2",		density_arg_size_state2, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/st2",			density_arg_size_state2, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st3",		density_arg_size_state3, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/st3",			density_arg_size_state3, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/parts",			density_arg_total_parts, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/noise_parts",	density_arg_noise_parts, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/max_time",		density_arg_max_time,	 arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/transient",		density_arg_transient,	 arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" },
-	{ "/experiments",	density_arg_experiments, arg_value_t(""), density_args, density_args_size, nullptr, 0, nullptr, "" }
+	{ "/size_st0",		density_arg_size_state0,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st0",			density_arg_size_state0,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st1",		density_arg_size_state1,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st1",			density_arg_size_state1,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st2",		density_arg_size_state2,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st2",			density_arg_size_state2,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/size_st3",		density_arg_size_state3,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/st3",			density_arg_size_state3,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/parts",			density_arg_total_parts,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/noise_parts",	density_arg_noise_parts,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/max_time",		density_arg_max_time,				arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/transient",		density_arg_transient,				arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" },
+	{ "/experiments",	density_arg_experiments,			arg_value_t(""),	density_args,		density_args_size,		nullptr,				0,							nullptr,						"" }
 };
 param_struct recoveryrate_params[recoveryrate_params_size]{
-	{ "/size_st0",		recoveryrate_arg_size_state0,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/st0",			recoveryrate_arg_size_state0,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st1",		recoveryrate_arg_size_state1,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/st1",			recoveryrate_arg_size_state1,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st2",		recoveryrate_arg_size_state2,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/st2",			recoveryrate_arg_size_state2,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/size_st3",		recoveryrate_arg_size_state3,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/st3",			recoveryrate_arg_size_state3,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/parts",			recoveryrate_arg_total_parts,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/noise_parts",	recoveryrate_arg_noise_parts,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/max_time",		recoveryrate_arg_max_time,		  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/damage_size",	recoveryrate_arg_damage_size,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/damage_states",	recoveryrate_arg_damaging_states, arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/majority",		recoveryrate_arg_majority_state,  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" },
-	{ "/experiments",	recoveryrate_arg_experiments,	  arg_value_t(""), recoveryrate_args, recoveryrate_args_size, nullptr, 0, nullptr, "" }
+	{ "/size_st0",		recoveryrate_arg_size_state0,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/st0",			recoveryrate_arg_size_state0,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/size_st1",		recoveryrate_arg_size_state1,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/st1",			recoveryrate_arg_size_state1,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/size_st2",		recoveryrate_arg_size_state2,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/st2",			recoveryrate_arg_size_state2,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/size_st3",		recoveryrate_arg_size_state3,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/st3",			recoveryrate_arg_size_state3,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/parts",			recoveryrate_arg_total_parts,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/noise_parts",	recoveryrate_arg_noise_parts,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/max_time",		recoveryrate_arg_max_time,			arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/damage_size",	recoveryrate_arg_damage_size,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/damage_states",	recoveryrate_arg_damaging_states,	arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/majority",		recoveryrate_arg_majority_state,	arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" },
+	{ "/experiments",	recoveryrate_arg_experiments,		arg_value_t(""),	recoveryrate_args,	recoveryrate_args_size, nullptr,				0,							nullptr,						"" }
 };
 
 
 const int gkl_commands_size = 7;
 param_struct gkl_commands[gkl_commands_size] = {
-	{ "timespace",	  param_no_arg, arg_value_t(""), nullptr, 0, timespace_params,	  timespace_params_size,	gkl_timespace_experiment,	 "" },
-	{ "measure",	  param_no_arg, arg_value_t(""), nullptr, 0, measure_params,	  measure_params_size,		gkl_measure_experiment,		 "" },
-	{ "density",	  param_no_arg, arg_value_t(""), nullptr, 0, density_params,	  density_params_size,		gkl_density_experiment,		 "" },
-	{ "recoveryrate", param_no_arg, arg_value_t(""), nullptr, 0, recoveryrate_params, recoveryrate_params_size, gkl_recoveryrate_experiment, "" },
-	{ "/help",		  param_no_arg, arg_value_t(""), nullptr, 0, nullptr,			  0,						help,						 "" },
-	{ "-help",		  param_no_arg, arg_value_t(""), nullptr, 0, nullptr,			  0,						help,						 "" },
-	{ "--help",		  param_no_arg, arg_value_t(""), nullptr, 0, nullptr,			  0,						help,						 "" },
+	{ "timespace",		param_no_arg,						arg_value_t(""),	nullptr,			0,						timespace_params,		timespace_params_size,		gkl_timespace_experiment,		"" },
+	{ "measure",		param_no_arg,						arg_value_t(""),	nullptr,			0,						measure_params,			measure_params_size,		gkl_measure_experiment,			"" },
+	{ "density",		param_no_arg,						arg_value_t(""),	nullptr,			0,						density_params,			density_params_size,		gkl_density_experiment,			"" },
+	{ "recoveryrate",	param_no_arg,						arg_value_t(""),	nullptr,			0,						recoveryrate_params,	recoveryrate_params_size,	gkl_recoveryrate_experiment,	"" },
+	{ "/help",			param_no_arg,						arg_value_t(""),	nullptr,			0,						nullptr,				0,							help,							"" },
+	{ "-help",			param_no_arg,						arg_value_t(""),	nullptr,			0,						nullptr,				0,							help,							"" },
+	{ "--help",			param_no_arg,						arg_value_t(""),	nullptr,			0,						nullptr,				0,							help,							"" },
 };
 
 

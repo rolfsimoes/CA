@@ -11,7 +11,7 @@
 #define TWO64	"2222222222222222222222222222222222222222222222222222222222222222"
 #define THREE64 "3333333333333333333333333333333333333333333333333333333333333333"
 
-DECLSPEC CA * create_ca_gkl(const uint_t size_state0,
+DECLSPEC CA * create_ca_gkl4(const uint_t size_state0,
 	const uint_t size_state1,
 	const uint_t size_state2,
 	const uint_t size_state3,
